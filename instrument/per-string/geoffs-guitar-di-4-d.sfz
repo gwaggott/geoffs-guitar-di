@@ -1,0 +1,629 @@
+// Geoff's Guitar DI: string 4 (D) alone, for one sampler per string
+// Samples and SFZ files: CC BY 4.0, Geoffrey Waggott (LICENSE; no credit
+// needed for music made with them). Built by tools/build.py.
+
+<control>
+default_path=../Samples/
+set_cc74=127
+
+<global>
+bend_up=1200 bend_down=-1200
+amp_veltrack=100 amp_velcurve_0=0.0397 amp_velcurve_95=1 amp_velcurve_127=1
+ampeg_attack=0 ampeg_release=0.2 loop_mode=no_loop group=1 polyphony=1
+
+// open: picked when no other note is held, else legato
+<group> locc74=96 hicc74=127 trigger=first
+<region> key=50 pitch_keycenter=50 lovel=1 hivel=42 volume=23.89 tune=-1.1 sample=D_f00_soft.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 lovel=1 hivel=42 volume=23.89 tune=-0.9 sample=D_f01_soft.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 lovel=1 hivel=42 volume=23.89 tune=0.4 sample=D_f04_soft.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 lovel=1 hivel=42 volume=23.89 tune=2.2 sample=D_f07_soft.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 lovel=1 hivel=42 volume=23.89 tune=3.7 sample=D_f10_soft.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 lovel=1 hivel=42 volume=23.89 tune=1.3 sample=D_f13_soft.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 lovel=1 hivel=42 volume=23.89 tune=-0.8 sample=D_f16_soft.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 lovel=1 hivel=42 volume=23.89 tune=-3.4 sample=D_f19_soft.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 lovel=1 hivel=42 volume=23.89 tune=-7.7 sample=D_f22_soft.flac
+<region> key=50 pitch_keycenter=50 lovel=43 hivel=84 volume=15.48 tune=-0.3 sample=D_f00_med.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 lovel=43 hivel=84 volume=15.48 tune=-1.1 sample=D_f01_med.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 lovel=43 hivel=84 volume=15.48 tune=0.2 sample=D_f04_med.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 lovel=43 hivel=84 volume=15.48 tune=3.1 sample=D_f07_med.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 lovel=43 hivel=84 volume=15.48 tune=3.2 sample=D_f10_med.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 lovel=43 hivel=84 volume=15.48 tune=4.0 sample=D_f13_med.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 lovel=43 hivel=84 volume=15.48 tune=-1.2 sample=D_f16_med.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 lovel=43 hivel=84 volume=15.48 tune=1.2 sample=D_f19_med.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 lovel=43 hivel=84 volume=15.48 tune=-4.5 sample=D_f22_med.flac
+<region> key=50 pitch_keycenter=50 lovel=85 hivel=127 volume=10.87 tune=-2.7 sample=D_f00_hard.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 lovel=85 hivel=127 volume=10.87 tune=-6.8 sample=D_f01_hard.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 lovel=85 hivel=127 volume=10.87 tune=-6.6 sample=D_f04_hard.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 lovel=85 hivel=127 volume=10.87 tune=-3.3 sample=D_f07_hard.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 lovel=85 hivel=127 volume=10.87 tune=4.7 sample=D_f10_hard.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 lovel=85 hivel=127 volume=10.87 tune=6.4 sample=D_f13_hard.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 lovel=85 hivel=127 volume=10.87 tune=4.9 sample=D_f16_hard.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 lovel=85 hivel=127 volume=10.87 tune=0.5 sample=D_f19_hard.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 lovel=85 hivel=127 volume=10.87 tune=-5.7 sample=D_f22_hard.flac
+
+<group> locc74=96 hicc74=127 trigger=legato
+<region> key=50 sw_previous=38 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=39 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=40 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=41 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=42 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=43 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=44 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=45 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=46 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=47 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=48 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=49 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=51 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=52 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=53 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=54 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=55 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=56 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=57 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=58 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=59 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=60 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=61 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=50 sw_previous=62 pitch_keycenter=50 volume=21.03 tune=-1.0 sample=D_f00_po.flac
+<region> key=51 sw_previous=39 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=40 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=41 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=42 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=43 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=44 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=45 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=46 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=47 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=48 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=49 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=50 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=51 sw_previous=52 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=53 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=54 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=55 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=56 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=57 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=58 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=59 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=60 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=61 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=62 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=51 sw_previous=63 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=40 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=41 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=42 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=43 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=44 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=45 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=46 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=47 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=48 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=49 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=50 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=51 pitch_keycenter=51 volume=18.43 tune=-4.5 sample=D_f01_ho.flac
+<region> key=52 sw_previous=53 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=54 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=55 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=56 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=57 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=58 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=59 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=60 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=61 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=62 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=63 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=52 sw_previous=64 pitch_keycenter=51 volume=21.03 tune=-1.1 sample=D_f01_po.flac
+<region> key=53 sw_previous=41 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=42 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=43 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=44 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=45 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=46 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=47 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=48 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=49 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=50 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=51 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=52 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=53 sw_previous=54 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=55 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=56 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=57 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=58 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=59 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=60 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=61 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=62 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=63 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=64 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=53 sw_previous=65 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=42 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=43 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=44 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=45 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=46 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=47 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=48 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=49 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=50 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=51 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=52 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=53 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=54 sw_previous=55 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=56 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=57 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=58 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=59 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=60 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=61 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=62 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=63 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=64 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=65 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=54 sw_previous=66 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=43 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=44 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=45 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=46 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=47 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=48 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=49 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=50 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=51 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=52 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=53 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=54 pitch_keycenter=54 volume=18.43 tune=0.4 sample=D_f04_ho.flac
+<region> key=55 sw_previous=56 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=57 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=58 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=59 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=60 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=61 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=62 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=63 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=64 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=65 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=66 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=55 sw_previous=67 pitch_keycenter=54 volume=21.03 tune=0.6 sample=D_f04_po.flac
+<region> key=56 sw_previous=44 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=45 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=46 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=47 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=48 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=49 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=50 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=51 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=52 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=53 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=54 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=55 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=56 sw_previous=57 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=58 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=59 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=60 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=61 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=62 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=63 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=64 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=65 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=66 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=67 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=56 sw_previous=68 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=45 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=46 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=47 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=48 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=49 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=50 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=51 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=52 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=53 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=54 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=55 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=56 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=57 sw_previous=58 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=59 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=60 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=61 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=62 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=63 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=64 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=65 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=66 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=67 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=68 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=57 sw_previous=69 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=46 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=47 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=48 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=49 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=50 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=51 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=52 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=53 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=54 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=55 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=56 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=57 pitch_keycenter=57 volume=18.43 tune=3.0 sample=D_f07_ho.flac
+<region> key=58 sw_previous=59 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=60 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=61 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=62 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=63 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=64 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=65 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=66 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=67 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=68 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=69 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=58 sw_previous=70 pitch_keycenter=57 volume=21.03 tune=1.7 sample=D_f07_po.flac
+<region> key=59 sw_previous=47 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=48 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=49 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=50 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=51 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=52 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=53 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=54 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=55 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=56 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=57 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=58 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=59 sw_previous=60 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=61 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=62 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=63 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=64 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=65 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=66 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=67 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=68 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=69 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=70 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=59 sw_previous=71 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=48 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=49 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=50 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=51 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=52 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=53 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=54 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=55 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=56 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=57 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=58 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=59 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=60 sw_previous=61 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=62 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=63 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=64 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=65 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=66 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=67 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=68 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=69 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=70 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=71 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=60 sw_previous=72 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=49 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=50 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=51 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=52 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=53 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=54 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=55 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=56 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=57 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=58 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=59 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=60 pitch_keycenter=60 volume=18.43 tune=5.7 sample=D_f10_ho.flac
+<region> key=61 sw_previous=62 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=63 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=64 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=65 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=66 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=67 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=68 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=69 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=70 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=71 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=72 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=61 sw_previous=73 pitch_keycenter=60 volume=21.03 tune=0.5 sample=D_f10_po.flac
+<region> key=62 sw_previous=50 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=51 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=52 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=53 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=54 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=55 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=56 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=57 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=58 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=59 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=60 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=61 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=62 sw_previous=63 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=64 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=65 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=66 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=67 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=68 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=69 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=70 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=71 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=72 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=73 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=62 sw_previous=74 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=51 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=52 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=53 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=54 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=55 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=56 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=57 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=58 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=59 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=60 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=61 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=62 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=63 sw_previous=64 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=65 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=66 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=67 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=68 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=69 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=70 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=71 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=72 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=73 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=74 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=63 sw_previous=75 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=52 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=53 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=54 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=55 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=56 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=57 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=58 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=59 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=60 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=61 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=62 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=63 pitch_keycenter=63 volume=18.43 tune=7.1 sample=D_f13_ho.flac
+<region> key=64 sw_previous=65 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=66 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=67 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=68 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=69 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=70 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=71 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=72 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=73 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=74 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=75 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=64 sw_previous=76 pitch_keycenter=63 volume=21.03 tune=0.7 sample=D_f13_po.flac
+<region> key=65 sw_previous=53 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=54 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=55 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=56 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=57 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=58 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=59 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=60 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=61 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=62 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=63 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=64 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=65 sw_previous=66 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=67 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=68 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=69 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=70 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=71 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=72 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=73 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=74 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=75 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=76 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=65 sw_previous=77 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=54 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=55 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=56 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=57 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=58 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=59 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=60 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=61 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=62 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=63 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=64 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=65 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=66 sw_previous=67 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=68 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=69 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=70 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=71 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=72 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=73 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=74 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=75 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=76 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=77 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=66 sw_previous=78 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=55 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=56 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=57 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=58 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=59 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=60 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=61 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=62 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=63 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=64 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=65 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=66 pitch_keycenter=66 volume=18.43 tune=1.7 sample=D_f16_ho.flac
+<region> key=67 sw_previous=68 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=69 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=70 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=71 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=72 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=73 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=74 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=75 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=76 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=77 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=78 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=67 sw_previous=79 pitch_keycenter=66 volume=21.03 tune=2.3 sample=D_f16_po.flac
+<region> key=68 sw_previous=56 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=57 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=58 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=59 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=60 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=61 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=62 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=63 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=64 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=65 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=66 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=67 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=68 sw_previous=69 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=70 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=71 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=72 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=73 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=74 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=75 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=76 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=77 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=78 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=79 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=68 sw_previous=80 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=57 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=58 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=59 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=60 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=61 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=62 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=63 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=64 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=65 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=66 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=67 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=68 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=69 sw_previous=70 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=71 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=72 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=73 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=74 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=75 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=76 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=77 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=78 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=79 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=80 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=69 sw_previous=81 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=58 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=59 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=60 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=61 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=62 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=63 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=64 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=65 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=66 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=67 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=68 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=69 pitch_keycenter=69 volume=18.43 tune=2.6 sample=D_f19_ho.flac
+<region> key=70 sw_previous=71 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=72 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=73 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=74 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=75 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=76 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=77 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=78 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=79 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=80 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=81 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=70 sw_previous=82 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=59 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=60 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=61 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=62 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=63 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=64 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=65 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=66 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=67 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=68 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=69 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=70 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=71 sw_previous=72 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=73 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=74 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=75 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=76 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=77 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=78 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=79 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=80 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=81 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=82 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=71 sw_previous=83 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=60 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=61 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=62 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=63 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=64 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=65 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=66 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=67 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=68 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=69 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=70 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=71 pitch_keycenter=72 volume=18.43 tune=2.6 sample=D_f22_ho.flac
+<region> key=72 sw_previous=73 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=74 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=75 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=76 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=77 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=78 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=79 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=80 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=81 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=82 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=83 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+<region> key=72 sw_previous=84 pitch_keycenter=69 volume=21.03 tune=4.7 sample=D_f19_po.flac
+
+// palm mute
+<group> locc74=64 hicc74=95
+<region> key=50 pitch_keycenter=50 lovel=1 hivel=84 volume=17.70 tune=5.4 sample=D_f00_mute_med.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 lovel=1 hivel=84 volume=17.70 tune=-3.7 sample=D_f01_mute_med.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 lovel=1 hivel=84 volume=17.70 tune=1.3 sample=D_f04_mute_med.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 lovel=1 hivel=84 volume=17.70 tune=-1.9 sample=D_f07_mute_med.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 lovel=1 hivel=84 volume=17.70 tune=7.9 sample=D_f10_mute_med.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 lovel=1 hivel=84 volume=17.70 tune=2.8 sample=D_f13_mute_med.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 lovel=1 hivel=84 volume=17.70 tune=-10.1 sample=D_f16_mute_med.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 lovel=1 hivel=84 volume=17.70 tune=-22.6 sample=D_f19_mute_med.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 lovel=1 hivel=84 volume=17.70 tune=-21.2 sample=D_f22_mute_med.flac
+<region> key=50 pitch_keycenter=50 lovel=85 hivel=127 volume=10.90 tune=4.6 sample=D_f00_mute_hard.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 lovel=85 hivel=127 volume=10.90 tune=-13.7 sample=D_f01_mute_hard.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 lovel=85 hivel=127 volume=10.90 tune=12.8 sample=D_f04_mute_hard.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 lovel=85 hivel=127 volume=10.90 tune=1.8 sample=D_f07_mute_hard.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 lovel=85 hivel=127 volume=10.90 tune=2.2 sample=D_f10_mute_hard.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 lovel=85 hivel=127 volume=10.90 tune=3.2 sample=D_f13_mute_hard.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 lovel=85 hivel=127 volume=10.90 tune=-3.2 sample=D_f16_mute_hard.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 lovel=85 hivel=127 volume=10.90 tune=-4.5 sample=D_f19_mute_hard.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 lovel=85 hivel=127 volume=10.90 tune=-17.7 sample=D_f22_mute_hard.flac
+
+// dead: a stand-in, the hard palm mutes cut short
+<group> locc74=0 hicc74=63 ampeg_hold=0.02 ampeg_decay=0.03 ampeg_sustain=0
+<region> key=50 pitch_keycenter=50 volume=10.90 tune=4.6 sample=D_f00_mute_hard.flac
+<region> lokey=51 hikey=52 pitch_keycenter=51 volume=10.90 tune=-13.7 sample=D_f01_mute_hard.flac
+<region> lokey=53 hikey=55 pitch_keycenter=54 volume=10.90 tune=12.8 sample=D_f04_mute_hard.flac
+<region> lokey=56 hikey=58 pitch_keycenter=57 volume=10.90 tune=1.8 sample=D_f07_mute_hard.flac
+<region> lokey=59 hikey=61 pitch_keycenter=60 volume=10.90 tune=2.2 sample=D_f10_mute_hard.flac
+<region> lokey=62 hikey=64 pitch_keycenter=63 volume=10.90 tune=3.2 sample=D_f13_mute_hard.flac
+<region> lokey=65 hikey=67 pitch_keycenter=66 volume=10.90 tune=-3.2 sample=D_f16_mute_hard.flac
+<region> lokey=68 hikey=70 pitch_keycenter=69 volume=10.90 tune=-4.5 sample=D_f19_mute_hard.flac
+<region> lokey=71 hikey=72 pitch_keycenter=72 volume=10.90 tune=-17.7 sample=D_f22_mute_hard.flac

@@ -1,0 +1,133 @@
+# Geoff's Guitar DI
+
+A free sampled electric guitar for SFZ players: a Strat-style guitar in E
+standard, bridge humbucker, recorded DI (no amp, no cabinet) so you can put
+your own amp or amp simulator after it. Each string recorded on its own, at
+the open string and frets 1, 4, 7, 10, 13, 16, 19 and 22, with:
+
+- **picked notes** in three velocity layers: soft, medium, hard;
+- **palm mutes** in two: medium, hard;
+- **hammer-ons and pull-offs** (legato): a legato note plays a hammer-on
+  sample when the previous note was lower and a pull-off sample when it was
+  higher;
+- **dead notes** (for now a stand-in: the hard palm mutes cut short).
+
+366 samples, 24-bit FLAC, 48 kHz mono, 97 MB. Free under CC BY 4.0, and music
+made with it needs no credit ([Licence](#licence)).
+
+**Download** the zip from the
+[latest release](https://github.com/gwaggott/geoffs-guitar-di/releases/latest)
+and unzip it anywhere: it has the samples, the SFZ files, this README and the
+licence. (The repository itself has no samples; they're too big for git.)
+
+## Two ways to play it
+
+| File | For | Articulation | Legato | Strings |
+|---|---|---|---|---|
+| `geoffs-guitar-di.sfz` | keyboards | keyswitches | while the legato pedal (CC68) is down | each key on one string |
+| `per-string/geoffs-guitar-di-<n>-<string>.sfz` | MIDI guitars, MPE | CC74 at note-on | automatic | one file per string |
+
+### Keyboard: `geoffs-guitar-di.sfz`
+
+One instance plays the whole guitar, MIDI notes 38–86 (D2–D6).
+
+| Control | Does |
+|---|---|
+| Velocity | 1–42 soft, 43–84 medium, 85–127 hard (palm mutes: 1–84 medium, 85–127 hard) |
+| C1 (24) | open (picked) notes, the default |
+| C♯1 (25) | palm mute |
+| D1 (26) | dead notes |
+| CC68 (legato pedal) down | a note played while another is held is a hammer-on or pull-off |
+| Pitch bend | ±12 semitones |
+
+Each key plays on one string, the one nearest the nut that can play it: low E
+for D2–G♯2, A for A2–C♯3, D for D3–F♯3, G for G3–A♯3, B for B3–D♯4 and the high
+E from E4 up. A string plays one note at a time, as a real one does, so two
+keys on the same string cut each other off. The legato pedal is needed because
+a single SFZ instance can't tell which string a held note is on: without the
+pedal, every note in a chord would count as legato.
+
+### MIDI guitar and MPE: `per-string/`
+
+Six files, one per string, string 1 = high E (as MIDI guitars number them).
+Load each into its own sampler instance and give it the MIDI channel its
+string arrives on: in a MIDI guitar's mono (string-per-channel) mode usually
+channels 1–6, in MPE's lower zone channels 2–7.
+
+| Control | Does |
+|---|---|
+| Velocity | as above |
+| CC74 at note-on | 96–127 open (the default), 64–95 palm mute, 0–63 dead |
+| A note-on while the string's last note is held | legato: hammer-on or pull-off by direction |
+| Pitch bend (per channel) | ±12 semitones: set your controller's bend range to 12 |
+
+Each file plays one note at a time. CC74 is MPE's per-note timbre control; a
+MIDI guitar that doesn't send it plays open notes.
+
+## Players
+
+Made for [sfizz](https://sfizz.com) (free, open source; LV2, VST3, AU and a
+standalone renderer) and checked with its renderer (`tools/check.py`). It uses only standard SFZ opcodes (`trigger=first`,
+`trigger=legato`, `sw_previous`, `sw_last`, `locc`/`hicc`, `amp_velcurve`), so
+other SFZ players such as sforzando should load it, but they are not tested
+yet. Open the `.sfz` file from inside the unzipped folder: the samples are found
+relative to it.
+
+## Known limitations
+
+- **Dead notes** are a stand-in until real ones are recorded.
+- **One take per note**, no round robins: fast repeated notes can sound
+  mechanical.
+- **Recorded positions:** nine per string; the frets between are the nearest
+  recorded note pitched by up to two semitones.
+- **Three pull-offs to open strings** (A, D, G) have another string ringing
+  quietly with them (11–19 dB down).
+- **Legato** covers notes up to 12 semitones from the previous one; slides are
+  not sampled (use pitch bend).
+- One pickup (bridge humbucker); no release or fret noises.
+
+## Licence
+
+The samples and SFZ files are © 2026 Geoffrey Waggott, licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with one additional
+permission: **music made with the instrument needs no credit.** Make, release,
+sell or broadcast music, soundtracks or anything else made with it, with no
+credit and no other condition. Credit is needed only when you share the
+samples or SFZ files themselves (as they are, changed, or converted to another
+format), for example: "Geoff's Guitar DI" by Geoffrey Waggott, licensed under
+CC BY 4.0. The scripts in `tools/` are under the MIT License. Details in
+[LICENSE](LICENSE).
+
+## Problems and requests
+
+[Open an issue](https://github.com/gwaggott/geoffs-guitar-di/issues): say which
+SFZ player and version, which file, and what you played and heard.
+
+## Building
+
+The SFZ files are generated by `tools/build.py` from each sample's measurements
+(`tools/measurements.json`: string, fret, take, level and tuning) and the
+mappings in `tools/guitar.py`. The FLAC samples aren't kept in git: unpack the
+release zip's `Samples/` folder into `instrument/` first.
+
+The tools need Python 3.9 or later and the packages in `requirements.txt`
+(numpy and soundfile). Install them in a virtual environment in the repository:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate       # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Then, with the environment active:
+
+```bash
+python tools/build.py           # the SFZ files, from instrument/Samples/
+python tools/check.py           # render in sfizz and check each control picks the right sample
+python tools/build.py --zip     # also dist/geoffs-guitar-di-<date>.zip, the release
+```
+
+`check.py` also needs `sfizz_render` from
+[sfizz](https://github.com/sfztools/sfizz), on the PATH or named by
+`$SFIZZ_RENDER`. The maintainer makes the samples from the sliced recordings
+with `--source DIR` (WAV files of the same names).

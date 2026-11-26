@@ -1,0 +1,52 @@
+Geoff's Guitar DI
+Copyright (c) 2026 Geoffrey Waggott
+
+The instrument
+--------------
+
+The samples (instrument/Samples/*.flac), the SFZ files (instrument/*.sfz,
+instrument/per-string/*.sfz) and the sample measurements
+(tools/measurements.json) are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0):
+
+  https://creativecommons.org/licenses/by/4.0/
+  Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Credit for the instrument, when you share the samples or SFZ files (as they are,
+changed, or converted to another format), for example:
+
+  "Geoff's Guitar DI" by Geoffrey Waggott, licensed under CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/)
+
+and say if you changed them.
+
+Additional permission: music made with the instrument needs no credit. You may
+use the samples and SFZ files to make music, sound for film, games, video or any
+other recording or performance, and release, sell or broadcast the result,
+without giving credit and without any other condition. The attribution condition
+of CC BY 4.0 applies only to sharing the samples or SFZ files themselves, alone
+or as part of another sample library or instrument.
+
+
+The tools
+---------
+
+The Python scripts in tools/ (*.py) are licensed under the MIT License:
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

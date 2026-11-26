@@ -1,0 +1,7 @@
+# The FLAC samples are built (tools/build.py) and shipped in the release zip, not kept in git
+instrument/Samples/
+dist/
+build/
+__pycache__/
+*.wav
+.venv/
