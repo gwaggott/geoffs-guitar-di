@@ -1,6 +1,6 @@
 # Geoff's Guitar DI
 
-A free sampled electric guitar for SFZ players: a S-style guitar in E
+A free sampled electric guitar for SFZ players: an S-style guitar in E
 standard, bridge humbucker, recorded DI (no amp, no cabinet) so you can put
 your own amp or amp simulator after it. Each string recorded on its own, at
 the open string and frets 1, 4, 7, 10, 13, 16, 19 and 22, with:
